@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#073d75">
+  <meta name="description" content="Join the outabit public beta on iPhone with TestFlight or download the Android beta from GitHub.">
+  <link rel="canonical" href="https://terry77075.github.io/app-downloads/outabit/">
+  <title>outabit beta downloads</title>
+  <style>
+    :root{
+      --navy:#073d75;--navy-deep:#032a52;--green:#58c64b;--green-deep:#2f9c37;
+      --sky:#edf7ff;--ink:#10283b;--muted:#526778;--line:#d7e5ee;--white:#fff;
+      --shadow:0 18px 54px rgba(3,42,82,.14)
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:linear-gradient(180deg,#f4faff 0,#fff 52%,#f3faf3 100%);color:var(--ink);font:16px/1.58 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:var(--navy)}
+    a:focus-visible{outline:4px solid #ffc72c;outline-offset:3px;border-radius:8px}
+    .wrap{width:min(1080px,calc(100% - 32px));margin-inline:auto}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 0}
+    .brand{display:inline-flex;align-items:center;text-decoration:none}
+    .brand img{width:142px;height:auto;display:block}
+    .all-downloads{font-weight:750;text-underline-offset:4px}
+    .hero{position:relative;isolation:isolate;min-height:520px;display:grid;align-items:end;overflow:hidden;border-radius:30px;box-shadow:var(--shadow);background:#183c5c}
+    .hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,26,49,.9) 0%,rgba(3,42,82,.66) 48%,rgba(3,42,82,.13) 78%);z-index:-1}
+    .hero-copy{width:min(620px,100%);padding:clamp(28px,6vw,64px);color:var(--white)}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;margin:0 0 14px;padding:7px 12px;border:1px solid rgba(255,255,255,.48);border-radius:999px;background:rgba(3,42,82,.35);font-size:.82rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:9px;height:9px;border-radius:50%;background:#72dc62;box-shadow:0 0 0 5px rgba(114,220,98,.2)}
+    h1{margin:0;font-size:clamp(2.35rem,7vw,5rem);line-height:.98;letter-spacing:-.055em}
+    .hero p{max-width:570px;margin:20px 0 0;font-size:clamp(1.05rem,2vw,1.28rem)}
+    .actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:28px}
+    .button{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:14px 18px;border:2px solid transparent;border-radius:14px;text-align:center;text-decoration:none;font-weight:850;line-height:1.2;transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+    .button:hover{transform:translateY(-2px)}
+    .button.ios{background:#fff;color:#12202b;box-shadow:0 10px 26px rgba(0,0,0,.2)}
+    .button.android{background:var(--green);color:#0d3512;box-shadow:0 10px 26px rgba(33,121,40,.3)}
+    .button .icon{font-size:1.35rem;line-height:1}
+    .beta-note{margin:24px 0 0;padding:15px 17px;border-left:4px solid #86df76;border-radius:0 12px 12px 0;background:rgba(4,34,62,.66);font-size:.96rem}
+    .section{padding:72px 0 0}
+    .section-head{max-width:700px;margin-bottom:26px}
+    .kicker{margin:0 0 7px;color:var(--green-deep);font-weight:850;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
+    h2{margin:0;font-size:clamp(1.75rem,4vw,2.7rem);line-height:1.14;letter-spacing:-.035em}
+    .section-head p{color:var(--muted);font-size:1.06rem}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    .card{padding:clamp(22px,4vw,34px);border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.94);box-shadow:0 10px 30px rgba(3,42,82,.07)}
+    .card h3{margin:0 0 8px;font-size:1.35rem}
+    .card p{margin:0;color:var(--muted)}
+    .steps{margin:20px 0 0;padding:0;list-style:none;counter-reset:step}
+    .steps li{counter-increment:step;position:relative;padding:0 0 20px 48px}
+    .steps li::before{content:counter(step);position:absolute;left:0;top:0;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--sky);color:var(--navy);font-weight:900}
+    .steps li:last-child{padding-bottom:0}
+    code{padding:.08rem .35rem;border-radius:5px;background:#eef4f7;color:#15324a;font-size:.9em}
+    .community{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:center;margin:72px 0 0;padding:clamp(26px,5vw,48px);border-radius:26px;background:linear-gradient(135deg,var(--navy-deep),var(--navy));color:#fff;box-shadow:var(--shadow)}
+    .community h2{font-size:clamp(1.7rem,4vw,2.5rem)}
+    .community p{margin:12px 0 0;color:#d8eaf7}
+    .community .button{background:#fff;color:var(--navy-deep)}
+    .coming{margin-top:16px;font-size:.9rem}
+    footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:42px 0 30px;color:var(--muted);font-size:.92rem}
+    footer p{margin:0}
+    footer a{text-underline-offset:3px}
+    @media(max-width:760px){
+      .wrap{width:min(100% - 22px,1080px)}
+      .topbar{padding:13px 4px}.brand img{width:118px}.all-downloads{font-size:.9rem}
+      .hero{min-height:620px;border-radius:22px;align-items:end}
+      .hero::after{background:linear-gradient(0deg,rgba(2,26,49,.95) 0%,rgba(3,42,82,.75) 58%,rgba(3,42,82,.08) 100%)}
+      .hero>img{object-position:57% center}
+      .hero-copy{padding:26px 22px}
+      .actions,.cards,.community{grid-template-columns:1fr}
+      .actions{gap:10px}
+      .section{padding-top:54px}
+      .community{margin-top:54px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="topbar" aria-label="Download pages">
+      <a class="brand" href="./" aria-label="outabit beta home">
+        <img src="assets/outabit-logo-light-background.png" alt="outabit">
+      </a>
+      <a class="all-downloads" href="../">All app downloads</a>
+    </nav>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <img src="assets/outabit-artwork-biking.png" alt="People biking, running, walking, hiking, kayaking, and skiing outdoors">
+        <div class="hero-copy">
+          <p class="eyebrow">Public beta</p>
+          <h1 id="hero-title">A little more outside.</h1>
+          <p>Join the outabit beta and help shape an activity app for biking, running, walking, hiking, kayaking, skiing, and everyday adventures.</p>
+          <div class="actions">
+            <a class="button ios" href="https://testflight.apple.com/join/vzqrtMEJ">
+              <span class="icon" aria-hidden="true">●</span>
+              Join on iPhone or iPad
+            </a>
+            <a class="button android" href="https://github.com/terry77075/RideLoop-Support/releases/download/beta-latest/RideLoop-Beta.apk">
+              <span class="icon" aria-hidden="true">↓</span>
+              Download for Android
+            </a>
+          </div>
+          <p class="beta-note"><strong>Still seeing RideLoop?</strong> That is expected during the beta. The installed app, TestFlight listing, APK filename, and some screens may still use the RideLoop name while the outabit identity rolls out. Installing this beta preserves the app's current identity.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="install-title">
+        <div class="section-head">
+          <p class="kicker">Install the beta</p>
+          <h2 id="install-title">Choose your phone</h2>
+          <p>Use the official TestFlight invitation on Apple devices or the existing published GitHub release on Android.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>iPhone and iPad</h3>
+            <ol class="steps">
+              <li>Install Apple's TestFlight app if you do not already have it.</li>
+              <li>Tap <strong>Join on iPhone or iPad</strong> above and accept the public beta invitation.</li>
+              <li>In TestFlight, tap <strong>Install</strong> or <strong>Update</strong>.</li>
+            </ol>
+          </article>
+          <article class="card">
+            <h3>Android</h3>
+            <ol class="steps">
+              <li>Tap <strong>Download for Android</strong>. The official file is <code>RideLoop-Beta.apk</code> on <code>github.com/terry77075</code>.</li>
+              <li>Open the downloaded APK. Android may ask you to allow installs from the browser or Files app you used.</li>
+              <li>Install over your existing beta to keep local data. Do not uninstall first. Keep Play Protect and other security protections enabled.</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="community" aria-labelledby="community-title">
+        <div>
+          <p class="kicker" style="color:#8ee77f">Meet the community</p>
+          <h2 id="community-title">Share your time outside</h2>
+          <p>The outabit Facebook group is the community space for beta users to share activities, ideas, and feedback with one another.</p>
+          <p class="coming">A separate public outabit Facebook Page is planned. Its public address will be added after the Page exists.</p>
+        </div>
+        <a class="button" href="https://www.facebook.com/groups/2170004987221418">Open the outabit group</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>Beta software can change and may contain issues. Back up anything important before updating.</p>
+      <p><a href="https://github.com/terry77075/RideLoop-Support/releases/tag/beta-latest">Android release details</a> · <a href="mailto:rideloopsupport@gmail.com">Beta support</a></p>
+    </footer>
+  </div>
+</body>
+</html>
