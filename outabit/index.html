@@ -56,6 +56,8 @@
     .community h2{font-size:clamp(1.7rem,4vw,2.5rem)}
     .community p{margin:12px 0 0;color:#d8eaf7}
     .community .button{background:#fff;color:var(--navy-deep)}
+    .community-links{display:grid;gap:12px}
+    .community-links .button.secondary{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
     .coming{margin-top:16px;font-size:.9rem}
     footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:42px 0 30px;color:var(--muted);font-size:.92rem}
     footer p{margin:0}
@@ -135,10 +137,12 @@
         <div>
           <p class="kicker" style="color:#8ee77f">Meet the community</p>
           <h2 id="community-title">Share your time outside</h2>
-          <p>The outabit Facebook group is the community space for beta users to share activities, ideas, and feedback with one another.</p>
-          <p class="coming">A separate public outabit Facebook Page is planned. Its public address will be added after the Page exists.</p>
+          <p>The outabit Facebook group is the community space for beta users to share activities, ideas, and feedback with one another. Follow the public Page for outabit updates.</p>
         </div>
-        <a class="button" href="https://www.facebook.com/groups/2170004987221418">Open the outabit group</a>
+        <div class="community-links">
+          <a class="button" href="https://www.facebook.com/groups/2170004987221418">Open the outabit group</a>
+          <a class="button secondary" href="https://www.facebook.com/profile.php?id=61595824941541">Visit the public outabit Page</a>
+        </div>
       </section>
     </main>
 
