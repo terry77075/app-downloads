@@ -1,2 +1,2 @@
 # app-downloads
-Official download links for RideLoop and MyHealthData
+Official download links for outabit and MyHealthData
